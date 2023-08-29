@@ -1,0 +1,54 @@
+// functions
+
+async function searchAddress() {
+    const zipCode = document.querySelector("#zipCode").value
+    
+    if (zipCode.length !== 8) {
+        alert("ZIP Code invalid.");
+        return
+    }
+
+    const url = `https://viacep.com.br/ws/${zipCode}/json/`
+
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data); 
+    
+    showAddress(data);
+}
+
+searchAddress()
+
+function showAddress(data) {
+    const result = document.querySelector("#result")
+    
+    result.innerHTML = `<p>Zip Code: ${data.cep}</p>
+                        <p>Public Place: ${data.logradouro}</p>
+                        <p>Complement: ${data.complemento}</p>
+                        <p>Neighborhood: ${data.bairro}</p>
+                        <p>City/State: ${data.localidade} / ${data.uf}</p>`
+}
+
+
+
+    
+
+
+/* 
+                        "cep": "01001-000",
+      					"logradouro": "Praça da Sé",
+      					"complemento": "lado ímpar",
+      					"bairro": "Sé",
+      					"localidade": "São Paulo",
+      					"uf": "SP", */
+
+
+
+
+
+
+
+
+
+
+

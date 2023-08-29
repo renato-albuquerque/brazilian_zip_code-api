@@ -9,7 +9,84 @@
 
 :root {
     font-size: 62.5%;
+}
+
+body {  /* Strategy to center all elements. */
     font-size: 1.6rem;
+    
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: bisque;
+}
+
+.container {
+    width: 35.5rem;
+    padding: 2rem;
+    background: linear-gradient(rgb(0, 0, 207), rgb(202, 202, 0));
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px black;
+}
+
+.title {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.subtitle {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+.source {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.source a {
+    color: rgb(202, 202, 0);
+}
+
+.wrapLabelInput {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label {
+    color: whitesmoke;
+    font-size: 1.8rem;
+}
+
+.messageNumbers {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: darkred;
+}
+
+#zipCode {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 15rem;      
+    text-align: center;  
+    font-size: 1.6rem;
+}
+
+#result {
+    margin: 2rem auto 0;
+    padding: 2rem;
+    background: lightyellow;
+    border: grey;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px black;
+    line-height: 2.5rem;
 }
 
 
