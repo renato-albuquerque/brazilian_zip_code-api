@@ -26,24 +26,10 @@ function showAddress(data) {
     } else {
         result.innerHTML = `<p># Zip Code: ${data.cep}</p>
                         <p># Public Place: ${data.logradouro}</p>
-                        <p># Complement: ${data.complemento}</p>
                         <p># Neighborhood: ${data.bairro}</p>
                         <p># City/State: ${data.localidade} / ${data.uf}</p>`
     }
 }
-
-
-
-    
-
-
-/* 
-                        "cep": "01001-000",
-      					"logradouro": "Praça da Sé",
-      					"complemento": "lado ímpar",
-      					"bairro": "Sé",
-      					"localidade": "São Paulo",
-      					"uf": "SP", */
 
 
 
