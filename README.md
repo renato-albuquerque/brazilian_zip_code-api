@@ -1,8 +1,8 @@
 # Easy Address | BR - ViaCEP API
 
-Project: Digital Business Card for a Real Estate Client. Solution that includes all user links. Project developed in August 2023.
+Project that has the purpose of searching the address through the zip code informed (Only for zip codes in Brazil). ViaCEP website API used.
 
-"Mobile first" project, responsive for 320px, 375px and 425px screens, developed in HTML, CSS and JavaScript. Some relevant features: "Share button" and added meta tags (Author, Description, Keywords) focused on search engine optimization (SEO).
+The technical evolution was due to improving knowledge in asynchronous JavaScript, FETCH API, async await.
 
 ## Table of contents
 
