@@ -13,6 +13,7 @@
 
 body {  /* Strategy to center all elements. */
     font-size: 1.6rem;
+    font-family: 'Ubuntu', sans-serif;
     
     display: grid;
     place-items: center;
@@ -32,19 +33,21 @@ body {  /* Strategy to center all elements. */
 .title {
     color: whitesmoke;
     text-align: center;
+    font-family: 'Audiowide', cursive;
+    font-size: 3rem;
 }
 
 .subtitle {
     color: whitesmoke;
     text-align: center;
-    font-size: 2rem;
-    margin-top: 0.5rem;
+    font-size: 1.8rem;
+    margin-top: 2rem;
 }
 
 .source {
     color: whitesmoke;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-top: 0.5rem;
 }
 
@@ -53,7 +56,7 @@ body {  /* Strategy to center all elements. */
 }
 
 .wrapLabelInput {
-    margin-top: 4rem;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,11 +64,11 @@ body {  /* Strategy to center all elements. */
 
 .label {
     color: whitesmoke;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .messageNumbers {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     color: darkred;
 }
@@ -79,14 +82,36 @@ body {  /* Strategy to center all elements. */
     font-size: 1.6rem;
 }
 
-#result {
+.wrapButton {
     margin: 2rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+#button {
+    display: block;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 8rem;
+    font-size: 1.6rem;
+    background: white;
+    color: #75758B;
+    box-shadow: 2px 2px 5px black;
+}
+
+#result {
+    margin: 5rem auto 0;
     padding: 2rem;
     background: lightyellow;
     border: grey;
     border-radius: 1rem;
     box-shadow: 2px 2px 5px black;
     line-height: 2.5rem;
+    font-size: 1.6rem;
+    color: #75758B;
 }
 
 

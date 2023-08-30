@@ -17,16 +17,19 @@ async function searchAddress() {
     showAddress(data);
 }
 
-searchAddress()
-
 function showAddress(data) {
     const result = document.querySelector("#result")
     
-    result.innerHTML = `<p>Zip Code: ${data.cep}</p>
-                        <p>Public Place: ${data.logradouro}</p>
-                        <p>Complement: ${data.complemento}</p>
-                        <p>Neighborhood: ${data.bairro}</p>
-                        <p>City/State: ${data.localidade} / ${data.uf}</p>`
+    if(data.erro) {
+        result.innerHTML = "Unable to locate the address."
+        result.style.color = "darkred"
+    } else {
+        result.innerHTML = `<p># Zip Code: ${data.cep}</p>
+                        <p># Public Place: ${data.logradouro}</p>
+                        <p># Complement: ${data.complemento}</p>
+                        <p># Neighborhood: ${data.bairro}</p>
+                        <p># City/State: ${data.localidade} / ${data.uf}</p>`
+    }
 }
 
 
