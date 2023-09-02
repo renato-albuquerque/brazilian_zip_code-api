@@ -27,7 +27,7 @@ function showAddress(data) {
         result.innerHTML = `<p># Zip Code: ${data.cep}</p>
                         <p># Public Place: ${data.logradouro}</p>
                         <p># Neighborhood: ${data.bairro}</p>
-                        <p># City/State: ${data.localidade} / ${data.uf}</p>`
+                        <p># City/State: ${data.localidade}/${data.uf}</p>`
     }
 }
 
